@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  </head>
+
+  <body>
+    <h2>Fight!</h2>
+
+    <div class="content">
+        <div class="character">
+            <img id="hero"  src="assets/goku.webp">
+            <div class="stats">
+                <progress  id="hero_life" class="life" max="100" min="0" value="100"></progress>
+                <h3 id="hero__life">100</h3>
+            </div>
+            </img>
+
+        </div>
+        
+        <div class="character">
+            <img id="enemy"  src="./assets/freezer.jpg">
+            <div class="stats">
+
+                <progress  id="enemy_life" max="100" min="0" class="life" value="100"></progress>
+                <h3 id="enemy__life">100</h3>
+            
+            </div>
+            </img>
+        </div>
+    </div>
+
+    
+    <script src="./js/solucion_ejercicio_2.js"></script>
+
+    <style>
+        
+        .content{
+            height: 100vh;
+            align-items: center;
+            display: flex;
+            gap: 5vw;
+        }
+        .life{
+            margin-top: 0;
+            width: 100%;
+        }
+        .character{ 
+            width: 20vw;
+        }
+        .stats{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img{
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            background-color: white;
+        }
+    </style>
+  </body>
+
+</html>
